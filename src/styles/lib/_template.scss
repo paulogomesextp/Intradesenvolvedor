@@ -1,0 +1,35 @@
+@import "template/_variables.scss";
+@import "lib/bootstrap/mixins.scss";
+@import "template/scaffolding.scss";
+@import "template/buttons.scss";
+@import "template/navbar.scss";
+// @import "mashup-example.scss";
+@import "template/map.scss";
+@import "template/contact-block.scss";
+@import "template/contact-form";
+@import "template/icons.scss";
+
+
+h2 {
+    &::after {
+        content: "";
+        display: block;
+        background-color: #66c0b3;
+        height: 3px;
+        margin: 20px 0;
+        width: 70px;
+    }
+    &.text-center::after {
+        margin: 20px auto;
+    }
+}
+
+
+.form-control {
+    box-shadow: none;
+    &:focus {
+        border-color: $brand-primary;
+        outline: 0;
+        box-shadow: 0 0 8px $brand-primary;
+    }
+}

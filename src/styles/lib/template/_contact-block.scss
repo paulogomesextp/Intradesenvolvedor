@@ -1,0 +1,14 @@
+.contact-block-container {
+    
+    background-color: #fff;
+    padding: 30px;
+    
+    @media (min-width: $screen-sm) {
+      position: absolute;
+      top: 20%;
+      padding: 50px;
+      right: 10%;
+    }
+
+
+}

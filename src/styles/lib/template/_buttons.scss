@@ -1,0 +1,24 @@
+.btn {
+    @include transition(all .2s linear);
+}
+
+.btn-default {
+    background-color: transparent;
+    &:hover {
+        background-color: $brand-primary;
+        color: white;
+        border-color: $brand-primary;
+    }
+}
+
+.btn-newsletter {
+    border-top: 1px solid #FFFFFF;
+    border-right: 1px solid #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+    color: #FFF;
+    &:hover{
+        background-color: #FFF;
+        color:$brand-primary;
+        border-color: #FFF;
+    }
+}
